@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="calculator.jpg" />
+    <title>Advanced Calculator</title>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- Theme toggle and title -->
+      <div class="header">
+        <h1>🧮 Calculator</h1>
+        <div class="header-buttons">
+          <button class="power-toggle" id="powerToggle">🔴</button>
+          <button class="theme-toggle" id="themeToggle">🌙</button>
+        </div>
+      </div>
+
+      <!-- Screen / Display -->
+      <section class="screen" id="screen">0</section>
+
+      <!-- History -->
+      <section class="history" id="history">
+        <h3>History</h3>
+        <div class="history-list" id="historyList"></div>
+        <button class="clear-history" id="clearHistory">Clear</button>
+      </section>
+
+      <!-- Calculator Buttons -->
+      <section class="calc-buttons">
+        <!-- Top row: C, ←, %, √, ÷ -->
+        <div class="calc-button-row">
+          <button class="calc-button double" data-value="C">C</button>
+          <button class="calc-button" data-value="←">←</button>
+          <button class="calc-button sci" data-value="%">%</button>
+          <button class="calc-button sci" data-value="√">√</button>
+          <button class="calc-button op" data-value="÷">÷</button>
+        </div>
+
+        <!-- Numbers and ops -->
+        <div class="calc-button-row">
+          <button class="calc-button num" data-value="7">7</button>
+          <button class="calc-button num" data-value="8">8</button>
+          <button class="calc-button num" data-value="9">9</button>
+          <button class="calc-button op" data-value="×">×</button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button num" data-value="4">4</button>
+          <button class="calc-button num" data-value="5">5</button>
+          <button class="calc-button num" data-value="6">6</button>
+          <button class="calc-button op" data-value="−">−</button>
+        </div>
+
+        <div class="calc-button-row">
+          <button class="calc-button num" data-value="1">1</button>
+          <button class="calc-button num" data-value="2">2</button>
+          <button class="calc-button num" data-value="3">3</button>
+          <button class="calc-button op" data-value="+">+</button>
+        </div>
+
+        <!-- Bottom row -->
+        <div class="calc-button-row">
+          <button class="calc-button double num" data-value="0">0</button>
+          <button class="calc-button decimal" data-value=".">.</button>
+          <button class="calc-button equals" data-value="=">=</button>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
